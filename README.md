@@ -282,12 +282,5 @@ As most developers, I'm working on multiple projects in parallel. If this projec
 
 ## Spam
 
-Mmailer is a bulk mail sending tool. Don't use it for spamming purposes. Spam is evil.
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Mailer is a bulk mail sending tool. Don't use it for spamming purposes. Spam is evil.
+We use it in AUT CEIT for newsletters.
