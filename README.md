@@ -264,22 +264,6 @@ This program will be best served with some sort of GUI. A web-based interface is
 
 This is an initial release. Currently, no checks or sanitation is done when parsing the configuration. Mmailer will just blow up when an error is encountered. At this early stage, the project targets power users and contributors. Others may want to wait for a later release that will hopefully sport a web interface with better usability.
 
-## Roadmap
-
-* [] Web interface
-* [X] Command-line interface
-* [] Documentation
-* [] Test suite
-* [] Generic template engine (Tilt, https://github.com/rtomayko/tilt)
-
-## License
-
-This software is released as open source under the LGPLv3 license. If you need a commercial license for private forks and modifications, we will provide you with a custom URL to a privately hosted gem with a commercial-friendly license. Please mail me for further inquiries.
-
-## Donations
-
-As most developers, I'm working on multiple projects in parallel. If this project is important to you, you're welcome to signal it to me by sending me a donation via paypal (or gittip). To send money via paypal, use the email address in my github profile and specify in the subject it's for mmailer. On [gittip](http://www.gittip.com/danielsz/ "Gittip"), my username is danielsz. Thank you in advance.
-
 ## Spam
 
 Mailer is a bulk mail sending tool. Don't use it for spamming purposes. Spam is evil.
