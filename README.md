@@ -1,4 +1,5 @@
-# Mmailer
+# Mailer
+*Based on [mmailer](https://github.com/danielsz/mmailer)*
 
 ## Rationale
 
@@ -10,19 +11,22 @@ Mmailer is flexible, and will help you make sure you stay within those limits, w
 Is it any good?
 ---
 
-[Yes][y].
-
-[y]: http://news.ycombinator.com/item?id=3067434
-
 ## Installation
 
-    $ gem install mmailer
+```sh
+git clone https://github.com/AUT-CEIT/mailer.git
+cd mailer
+bundle install
+```
+
 
 ## Usage
 
 All functionality is invoked via the gem's binary, mmailer.
 
-    $ mmailer
+```sh
+./bin/mmailer
+```
 
 ## Principle of operation
 
