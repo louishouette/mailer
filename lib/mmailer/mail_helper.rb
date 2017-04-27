@@ -43,8 +43,6 @@ module Mmailer
         when "development"
           puts mail.to_s
         else
-          try { mail.deliver! }
-          puts mail.to_s
           mail.to_s
       end
     end
