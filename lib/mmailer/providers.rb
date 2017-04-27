@@ -2,7 +2,7 @@ module Mmailer
   module Providers
 
     class << self
-      attr_accessor :mandrill, :gmail, :zoho, :mailgun
+      attr_accessor :mandrill, :gmail, :zoho, :mailgun, :aut
     end
 
     @mandrill = Proc.new do
@@ -50,6 +50,14 @@ module Mmailer
           :enable_starttls_auto => true
       }
     end
+
+    @aut = Proc.new do
+      delivery_method :smtp, {
+          :port => 25,
+          :address => "cmail.aut.ac.ir",
+      }
+    end
+
 
   end
 end
