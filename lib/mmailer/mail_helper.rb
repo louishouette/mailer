@@ -11,20 +11,20 @@ module Mmailer
     end
 
     def set_provider(provider)
-      providers = {gmail: Providers.gmail, mandrill: Providers.mandrill, zoho: Providers.zoho, mailgun: Providers.mailgun }
+      providers = {gmail: Providers.gmail, mandrill: Providers.mandrill, zoho: Providers.zoho, mailgun: Providers.mailgun, aut: Providers.aut }
       Mail.defaults(&providers[provider])
     end
 
     def send_email(user)
 
-      mail = Mail.new 
+      mail = Mail.new
       mail.to = user.email
       mail.from = from
       mail.subject = subject
       #Defaulting to UTF-8, set your own if this is incorrect.
       mail.charset = 'UTF-8'
       mail.content_transfer_encoding = '8bit'
-      
+
       compiled_source=ERB.new(File.read(Dir.pwd + "/" + Mmailer.configuration.template + ".md.erb")).result(binding)
 
       text_part = Mail::Part.new
@@ -43,6 +43,8 @@ module Mmailer
         when "development"
           puts mail.to_s
         else
+          try { mail.deliver! }
+          puts mail.to_s
           mail.to_s
       end
     end
